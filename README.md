@@ -1,4 +1,6 @@
-sshqt will create a tun(4) IP tunnel with a remote host where you have root ssh access.
+# sshqt - ssh quick tunnel, ssh -w friendly
+
+`sshqt` will create a tun IP tunnel with a remote host where you have root ssh access.
 
 Optionally you can ask it to prepare routing to reach hosts behind the remote ssh server.
 
@@ -108,3 +110,9 @@ parameters:
 ``` bash
 $ sudo make install
 ```
+
+## Compatibility
+
+The client and server must be running linux with iptools utilities and OpenSSH client and server.
+
+You need to have "PermitTunnel yes" or "PermitTunnel point-to-point" in /etc/ssh/sshd_config of the server.
