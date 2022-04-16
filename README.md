@@ -25,10 +25,11 @@ $ sshqt my_ssh_server start 8.8.8.8
 Output:
 ``` bash
 parameters:
-   TUN_LOCAL_NUM=0
-   TUN_LOCAL_IP="192.168.21.1"
-   TUN_REMOTE_NUM=0
-   TUN_REMOTE_IP="192.168.21.2"
+   SSHQT_LOCAL_NUM=0
+   SSHQT_LOCAL_IP="192.168.21.1"
+   SSHQT_REMOTE_NUM=0
+   SSHQT_REMOTE_IP="192.168.21.2"
+   SSHQT_SSH_OPTS=""
 
 [+] getting remote informations
 remote_user: u
@@ -72,10 +73,11 @@ traceroute to 8.8.8.8 (8.8.8.8), 30 hops max, 60 byte packets
 ``` bash
 $ sshqt my_ssh_server status 
 parameters:
-   TUN_LOCAL_NUM=0
-   TUN_LOCAL_IP="192.168.21.1"
-   TUN_REMOTE_NUM=0
-   TUN_REMOTE_IP="192.168.21.2"
+   SSHQT_LOCAL_NUM=0
+   SSHQT_LOCAL_IP="192.168.21.1"
+   SSHQT_REMOTE_NUM=0
+   SSHQT_REMOTE_IP="192.168.21.2"
+   SSHQT_SSH_OPTS=""
 
 interface tun0 exists on local  : yes 192.168.21.1/30
 interface tun0 exists on remote : yes 192.168.21.2/30
@@ -92,10 +94,11 @@ $ sshqt my_ssh_server stop 8.8.8.8
 Output:
 ``` bash
 parameters:
-   TUN_LOCAL_NUM=0
-   TUN_LOCAL_IP="192.168.21.1"
-   TUN_REMOTE_NUM=0
-   TUN_REMOTE_IP="192.168.21.2"
+   SSHQT_LOCAL_NUM=0
+   SSHQT_LOCAL_IP="192.168.21.1"
+   SSHQT_REMOTE_NUM=0
+   SSHQT_REMOTE_IP="192.168.21.2"
+   SSHQT_SSH_OPTS=""
 
 [+] stopping tunnel
 # pkill -x -f ssh -S none -N -T -f -w 0:0 my_ssh_server
