@@ -1,4 +1,4 @@
-# sshqt - ssh quick tunnel, ssh -w friendly
+# sshqt - ssh quick tunnel
 
 `sshqt` will create a tun IP tunnel with a remote host where you have root ssh access.
 
@@ -9,7 +9,7 @@ You need to have "PermitTunnel yes" or "PermitTunnel point-to-point" in /etc/ssh
 ``` bash
 $ sshqt -h
 ~ ssh quick tunnel, ssh -w friendly ~
-usage: /usr/local/bin/sshqt <remote_ip> (start | stop | status) [<routed_ip>]
+usage: sshqt <remote_ip> (start | stop | status) [<routed_ip>]
 ```
 
 ## Example: route 8.8.8.8 through a remote server
